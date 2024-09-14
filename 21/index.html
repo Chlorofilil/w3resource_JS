@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to create another string by adding "Py" in front of a given string. If the given string begins with "Py" return the original string.</title>
+</head>
+<body>
+    <script>
+        function checkPy(newWord){
+            if(newWord.startsWith("Py")){
+                console.log(`Your word is ${newWord}! You dont need add Py.`)
+            } else{
+                console.log(`Py${newWord}, Py was added.`)
+            }
+        }
+
+        console.log(checkPy("Python"))
+    </script>
+</body>
+</html>

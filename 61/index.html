@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function newWord(word1, word2){
+            let firstWord = word1.substring(1, word1.length);
+            let secondWord = word2.substring(1, word2.length);
+            let finalWord = firstWord + secondWord;
+            return finalWord;
+        }
+
+        console.log(newWord("PHP","JS"));
+        console.log(newWord("A","B"));
+        console.log(newWord("AA","BB"));
+    </script>
+</body>
+</html>

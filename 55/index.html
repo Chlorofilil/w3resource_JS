@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to check whether a given string contains an equal number of p's and t's.  </title>
+</head>
+<body>
+    <script>
+        function check(word){
+            let numberOfT = 0;
+            let numberOfP = 0;
+            for(let i = 0; i < word.length; i++){
+                if (word[i] === 'r') {
+                    numberOfT++;
+                } else if (word[i] === 'p') {
+                    numberOfP++;
+                    }
+                }
+            if( numberOfP === numberOfT){
+                return `Nachádza sa rovnaký počet h a p.`
+            } else {
+                return `Počet r a p nie je rovnaký.`;
+            }
+        }
+
+        console.log(check("paatpss"));
+        console.log(check("paatps"));
+    </script>
+</body>
+</html>

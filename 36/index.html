@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program that checks whether the last digit of three positive integers is the same.  </title>
+</head>
+<body>
+    <script>
+        function numCheck(n1, n2, n3){
+            let lastN1 = n1 % 10;
+            let lastN2 = n2 % 10;
+            let lastN3 = n3 % 10;
+            if(Math.sign(n1) > 0 && Math.sign(n2) > 0 && Math.sign(n3) >0){
+                    if(lastN1 == lastN2 && lastN1 == lastN3 && lastN2 == lastN3){
+                    console.log("Last number is the same.")
+                } 
+            } else {
+                
+            }
+            console.log("čisla niesu rovnake, alebo kladne.")
+        }
+
+        console.log(numCheck(20, 30, 400))
+        console.log(numCheck(-20, 30, 400))
+        console.log(numCheck(20, -30, 400))
+        console.log(numCheck(20, 30, 405))
+    </script>
+</body>
+</html>

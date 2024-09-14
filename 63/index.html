@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to create a string using the middle three characters of a given string of odd length. The string length must be greater than or equal to three.</title>
+</head>
+<body>
+    <script>
+        function newWord(word){
+            if(word.length % 2 === 1){
+                let startMidleLetter = Math.floor(word.length/2);
+                let midleLetter = word.substring(startMidleLetter -1, startMidleLetter+2);
+                return midleLetter;
+            } else {
+                return `Slovo má parny počet písmen.`;
+            }
+        }
+
+        console.log(newWord('abcdefg'));
+        console.log(newWord('HTML5'));
+        console.log(newWord('Python'));
+        console.log(newWord('PHP'));
+        console.log(newWord('Exercises'));
+    </script>
+</body>
+</html>

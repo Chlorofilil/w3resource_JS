@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to check whether a string "Script" appears at the 5th (index 4) position in a given string. If "Script" appears in the string, return the string without "Script" otherwise return the original one.  </title>
+</head>
+<body>
+    <script>
+        function check5LetterAndMore(word){
+            let Letter5more = word.substring(4,10);
+            if (Letter5more === "Script"){
+                return word.substring(0,4)
+            } else{
+                return word;
+            }
+        }
+
+        console.log(check5LetterAndMore("JavaScript"))
+        console.log(check5LetterAndMore("CoffeeScript"))
+    </script>
+</body>
+</html>

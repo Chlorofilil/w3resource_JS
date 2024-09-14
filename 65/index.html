@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to test whether a string ends with "Script". The string length must be greater than or equal to 6.</title>
+</head>
+<body>
+    <script>
+        function testword(word){
+            if(word.length >= 6){
+                if(word.slice(-6) === "Script"){
+                    return true;
+                } else{
+                    return false;
+                }
+            } else {
+                return `Slovo ma menje ako 6 znakov.`
+            }
+        }
+
+        console.log(testword("JavaScript"));
+        console.log(testword("asd"));
+        console.log(testword("JavaScriasdpt"));
+    </script>
+</body>
+</html>

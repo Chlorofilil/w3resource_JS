@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to count the number of vowels in a given string.  </title>
+</head>
+<body>
+    <script>
+        function checkvowels(word){
+            let vowels = "aeiouAEIOU";
+            let vowelsCount = 0;
+
+            for(i = 0; i < word.length; i ++){
+                if(vowels.includes(word[i])){
+                    vowelsCount++;
+                }
+            }
+            return vowelsCount;
+        }
+
+        console.log(checkvowels("Python"));
+        console.log(checkvowels("w3resource.com"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a program to check whether a specified character exists between the 2nd and 4th positions in a given string.  </title>
+</head>
+<body>
+    <script>
+        function doesLetterExist(word, findLetter){
+            let firstWord = word.substring(1,4);
+            let testFind = firstWord.includes(findLetter);
+            console.log(firstWord)
+            return testFind;
+        }
+
+    console.log(doesLetterExist("Python", "y"));
+    console.log(doesLetterExist("JavaScript", "a"));
+    console.log(doesLetterExist("Console", "o"));
+    console.log(doesLetterExist("Console", "C"));
+    console.log(doesLetterExist("Console", "e"));
+    console.log(doesLetterExist("JavaScript", "S"));
+    </script>
+</body>
+</html>

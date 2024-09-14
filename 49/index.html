@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.  </title>
+</head>
+<body>
+    <script>
+        function replaceWithNextCharacter(inputString) {
+            const alphabet = 'abcdefghijklmnopqrstuvwxyz'; 
+            const inputArray = inputString.toLowerCase().split('');
+            let result = '';
+
+            for (let i = 0; i < inputArray.length; i++) {
+                const char = inputArray[i];
+                if (alphabet.includes(char)) {
+                    const currentIndex = alphabet.indexOf(char);
+                    const nextChar = alphabet[(currentIndex + 1) % 26];
+                    result += nextChar;
+                    } else {
+                    result += char;
+                }
+            }
+
+            return result;
+            }
+
+            console.log(replaceWithNextCharacter("Ahoj, svet moj."))
+    </script>
+</body>
+</html>

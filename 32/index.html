@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to find the closest value to 100 from two numerical values. </title>
+</head>
+<body>
+    <script>
+        function findCloserNum(num1, num2){
+            let findNum1 = 100 - num1;
+            let findNum2 = 100 - num2;
+            if(findNum1 < findNum2){
+                console.log(`${num1} je bližšie k 100 ako ${num2}.`);
+            } else if(findNum2 < findNum1){
+                console.log(`${num2} je bližšie k 100 ako ${num1}.`);
+            } else if (findNum1 === findNum2){
+                console.log(`Čísla su rovnaké`);
+            }
+        }
+
+        console.log(findCloserNum(5,50))
+        console.log(findCloserNum(75,50))
+        console.log(findCloserNum(50,50))
+    </script>
+</body>
+</html>

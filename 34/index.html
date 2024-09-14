@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to find the largest number from the two given positive integers. The two numbers are in the range 40..60 inclusive</title>
+</head>
+<body>
+    <script>
+
+        let minNum = 40;
+        let maxNum = 60;
+
+        function findBigerNum(num1, num2){            
+            let findNum1 = maxNum - num1;
+            let findNum2 = maxNum - num2;
+
+            if((minNum <= num1 && num1 <= maxNum) && (minNum <= num2 && num2 <= maxNum)){
+                if(findNum1 > findNum2){
+                    console.log(`Prvé zadané čislo : ${num2} je väčšie ako druhé zadané čislo : ${num1}.`)
+                } 
+                    else if(findNum2 > findNum1){
+                        console.log(`Prvé zadané čislo : ${num1} je väčšie ako druhé zadané čislo : ${num2}.`)
+                }
+            } else{
+                console.log("čisla niesu v rozmedzi 40 - 60.")
+            }
+        }
+
+        console.log(findBigerNum(60, 45))
+    </script>
+</body>
+</html>

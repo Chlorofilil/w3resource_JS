@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function wordrepeat(word, num){
+            if(0 <= num){
+                return word.repeat(num);                  
+            } else {         
+                return false;    
+            }
+        }
+
+        console.log(wordrepeat("abc", 5));
+        console.log(wordrepeat("abc", 0));
+        console.log(wordrepeat("abc", -2));
+    </script>
+</body>
+</html>

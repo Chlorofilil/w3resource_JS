@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to create an updated string of 4 copies of the last 3 characters of a given original string. The string length must be 3 and above.</title>
+</head>
+<body>
+    <script>
+        function repeat(word){
+            if(word.length >=3){
+                let endOfWord = word.substring(word.length -3, word.length);
+                return endOfWord.repeat(4);
+            } else {
+                console.log(`Slovo neobsahuje viac ako 3 pismena.`)
+            }
+            
+        }
+
+        console.log(repeat("Python 3.0"));
+        console.log(repeat("JS"));
+        console.log(repeat("JavaScript"));
+    </script>
+</body>
+</html>

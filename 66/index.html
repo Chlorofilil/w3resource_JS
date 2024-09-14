@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank.</title>
+</head>
+<body>
+    <script>
+        function testWorst(word){
+            let startOfWord = word.substring(0, 3);
+            if(startOfWord === "Los" || startOfWord === "New"){
+                return word;
+            } else {
+                return false;
+            }
+        }
+
+        console.log(testWorst("New York"));
+        console.log(testWorst("Los Angeles"));
+        console.log(testWorst("London"));
+    </script>
+</body>
+</html>

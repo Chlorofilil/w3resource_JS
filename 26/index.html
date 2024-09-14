@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to create a string from a given string. This is done by taking the last 3 characters and adding them at both the front and back. The string length must be 3 or more. </title>
+</head>
+<body>
+    <script>
+        function stringplay(word){
+            let last3Letter = word.substring(word.length-3, word.length);
+            let newWord = last3Letter + word + last3Letter;
+            return newWord;
+        }
+
+        console.log(stringplay("Swift"))
+    </script>
+</body>
+</html>

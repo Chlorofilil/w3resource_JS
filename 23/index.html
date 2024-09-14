@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters. The string length must be broader than or equal to 1.</title>
+</head>
+<body>
+    <script>
+        function switchLetters(word){
+            if(word.length <=1){
+                return word;
+            } else{
+                let firstLetter = word.substring(0,1);
+            let lastLetter = word.substring(word.length-1)
+            let midleLetter = word.slice(1, word.length-1)
+            return lastLetter + midleLetter + firstLetter;
+            }
+            
+        }
+
+        console.log(switchLetters("Swift"))
+        console.log(switchLetters("a"))
+        console.log(switchLetters("ab"))
+        console.log(switchLetters("abc"))
+    </script>
+</body>
+</html>

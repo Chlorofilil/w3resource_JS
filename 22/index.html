@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to remove a character at the specified position in a given string and return the modified string.  </title>
+</head>
+<body>
+    <script>
+        function remove_char(word, numletter){
+            let startRemove = numletter;
+            let endRemove = numletter+word.length;
+            let remove5Letter = word.slice(0, startRemove) ;
+            let removeendLetter = word.slice(startRemove+1, endRemove);
+            let finalWord = remove5Letter+removeendLetter
+            return finalWord;
+        }
+
+        console.log(remove_char("w3resource", 5))
+
+        //Better version
+        // function remove_char(word, numletter){
+        //     let remove5Letter = word.slice(0, numletter) ;
+        //     let removeendLetter = word.slice(numletter+1, numletter.length);
+        //     let finalWord = remove5Letter+removeendLetter
+        //     return finalWord;
+            
+        // }
+
+        // console.log(remove_char("w3resource", 5))
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to move the last three characters to the start of a given string. The string length must be greater than or equal to three.</title>
+</head>
+<body>
+    <script>
+        function newWord(word){
+            if(word.length >= 3){
+                let lastThree = word.substring(word.length - 3, word.length);
+                let wordLeft = word.substring(0, word.length - 3);
+                let finalWord = lastThree + wordLeft;
+                return finalWord;
+            } else {
+                return `Slovo ma menej ako 3 písmena.`
+            }          
+        }
+
+        function Letter3(word){
+            if(word.length >= 3){
+                return word.substring(word.length - 3, word.length) + word.substring(0, word.length - 3);
+            } else {
+                return `Slovo ma menej ako 3 písmena.`
+            } 
+        }
+
+        // console.log(newWord("Python"));
+        // console.log(newWord("JavaScript"));
+        // console.log(newWord("Hi"));
+
+        console.log(Letter3("Python"));
+        console.log(Letter3("JavaScript"));
+        console.log(Letter3("Hi"));
+    </script>
+</body>
+</html>

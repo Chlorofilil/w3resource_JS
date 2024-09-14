@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to check from three given integers whether a number is greater than or equal to 20. It is less than the others. </title>
+</head>
+<body>
+    <script>
+        function check(num1, num2, num3){
+            return (num1 >= 20) && (num1 < num2 || num1 < num3) ||
+            (num2 >= 20) && (num2 < num1 || num2 < num3) ||
+            (num3 >= 20) && (num3 < num1 || num3 < num2)
+        }
+
+        console.log(check(23, 45, 10));
+        console.log(check(23, 23, 10));
+        console.log(check(21, 66, 75));
+    </script>
+</body>
+</html>

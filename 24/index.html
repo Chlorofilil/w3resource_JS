@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to create another string from a given string with the first character of the given string added to the front and back.</title>
+</head>
+<body>
+    <script>
+        function addLetter(word){
+            let firstLetter = word.substring(0,1);
+            return firstLetter+word+firstLetter;
+        }
+
+        console.log(addLetter("Swift"))
+    </script>
+</body>
+</html>

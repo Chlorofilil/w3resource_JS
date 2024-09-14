@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(124, 50, 50);
+}
+
+#squar {
+    border: 2px solid black;
+    width: 350px;
+    height: 220px;
+    margin: 50px auto;
+    background-color: rgb(84, 105, 221);
+    border-radius: 10px;
+}
+
+input[type="text"]{
+    margin-top: 15px;
+    padding: 3px;    
+    border-radius: 7px;
+}
+
+.numberText {    
+    display: inline;
+    margin-left: 10px;
+    margin-top: 12px;
+    font-size: 30px;
+}
+
+input[type="button"]{
+    font-size: 20px;  
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px 10px;
+    background: rgb(124, 50, 50);
+    color: white;
+    border: 1px solid black;
+}
+
+input[type="button"]:hover{
+    background: rgb(187, 86, 86);
+}
+
+.ResultText{    
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 30px;
+}
+
+.ResultNumber{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 30px;
+}

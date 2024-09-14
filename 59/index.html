@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to extract the first half of a even string.</title>
+</head>
+<body>
+    <script>
+        function hafWord(word){
+            if(word.length % 2 ===0){                    
+                    return word.substring(0,word.length/2);
+                } else {
+                    console.log(`Slovo je nepárne.`)
+                }
+            }            
+
+        console.log(hafWord("Python"));  
+        console.log(hafWord("JavaScript")); 
+        console.log(hafWord("PHP"));
+    </script>
+</body>
+</html>
